@@ -14,6 +14,9 @@ public class HelloController {
         titulo.setText("Hola");
     }
 
+    @FXML
+
+
 
     @FXML
     public void imprimirHola() {

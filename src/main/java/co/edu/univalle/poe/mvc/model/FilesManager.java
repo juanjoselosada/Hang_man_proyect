@@ -15,7 +15,7 @@ public class FilesManager {
     private BufferedWriter writer;
     private BufferedReader reader;
 
-    public void separar(linea) {
+    public void separar(String linea) {
 
         String resultado = "";
 
@@ -25,8 +25,7 @@ public class FilesManager {
 
         resultado = resultado.substring(0, resultado.length() - 1);
 
-        System.out.println(resultado); // Salida: 1,2,2,3
-
+        System.out.println(resultado);
     }
 }
 
