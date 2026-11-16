@@ -15,18 +15,15 @@ public class FilesManager {
     private BufferedWriter writer;
     private BufferedReader reader;
 
-    public void separar(linea) {
+    // Hecho por la IA: descompone la palabra en cada una de sus letras (para el hangman).
+    public char[] separar(String palabra) {
+        char[] letras = new char[palabra.length()];
 
-        String resultado = "";
-
-        for (int i = 0; i < linea.length(); i++) {
-            resultado += linea.charAt(i) + ",";
+        for (int i = 0; i < palabra.length(); i++) {
+            letras[i] = palabra.charAt(i);
         }
 
-        resultado = resultado.substring(0, resultado.length() - 1);
-
-        System.out.println(resultado); // Salida: 1,2,2,3
-
+        return letras;
     }
 }
 
