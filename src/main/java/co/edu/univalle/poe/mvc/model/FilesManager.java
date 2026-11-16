@@ -7,6 +7,26 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import static java.nio.file.Path.of;
+
 public class FilesManager {
-    private final RUTA_PALABRAS = Path
+    private static final Path RUTA_RECORD = Path.of("src", "main", "java", "co", "edu", "univalle", "poe", "mvc", "model", "record.txt");
+
+    private BufferedWriter writer;
+    private BufferedReader reader;
+
+    public void separar(linea) {
+
+        String resultado = "";
+
+        for (int i = 0; i < linea.length(); i++) {
+            resultado += linea.charAt(i) + ",";
+        }
+
+        resultado = resultado.substring(0, resultado.length() - 1);
+
+        System.out.println(resultado); // Salida: 1,2,2,3
+
+    }
 }
+
