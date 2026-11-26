@@ -10,4 +10,15 @@ public class Partida {
     private Set<Character> letrasProbadas; /*Letras ya intentadas*/
     private int intentosRestantes;
     private EstadoPartida estado;
-}
+
+    public Partida(Jugador jugador,String palabraSecreta) {
+        this.jugador = jugador;
+        this.palabraSecreta = palabraSecreta.toLowerCase();
+        this.letrasReveladas = new char[this.palabraSecreta.length()];
+    }
+
+
+
+} /* Cierre clase Partida*/
+
+
